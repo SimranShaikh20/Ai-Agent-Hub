@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Bot, Search, Calculator, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
+import { Bot, Search, Calculator, TrendingUp, Sparkles, ArrowRight, Zap, Shield, Cpu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
       shortDescription: 'Automate repetitive tasks and workflows',
       path: '/task-automation',
       icon: Bot,
-      gradient: 'from-blue-500 to-cyan-500'
+      color: 'text-blue-600'
     },
     {
       type: 'LLM_SELECTOR',
@@ -22,7 +22,7 @@ const Index = () => {
       shortDescription: 'Choose the best AI model for your needs',
       path: '/llm-selector',
       icon: Search,
-      gradient: 'from-purple-500 to-pink-500'
+      color: 'text-purple-600'
     },
     {
       type: 'COST_ESTIMATOR',
@@ -31,7 +31,7 @@ const Index = () => {
       shortDescription: 'Calculate AI implementation costs',
       path: '/cost-estimator',
       icon: Calculator,
-      gradient: 'from-orange-500 to-amber-500'
+      color: 'text-orange-600'
     },
     {
       type: 'ROI_CALCULATOR',
@@ -40,70 +40,91 @@ const Index = () => {
       shortDescription: 'Measure AI investment returns',
       path: '/roi-calculator',
       icon: TrendingUp,
-      gradient: 'from-green-500 to-emerald-500'
+      color: 'text-green-600'
+    }
+  ];
+
+  const features = [
+    {
+      icon: Zap,
+      title: 'Lightning Fast',
+      description: 'Get instant AI-powered insights and recommendations in seconds'
+    },
+    {
+      icon: Shield,
+      title: 'Enterprise Ready',
+      description: 'Built for business-critical decisions with reliability and accuracy'
+    },
+    {
+      icon: Cpu,
+      title: 'Advanced AI',
+      description: 'Powered by state-of-the-art machine learning algorithms'
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-md">
-                <Bot className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900">AI Agent Hub</h1>
-                <p className="text-gray-600 mt-1">Choose your AI assistant for business optimization</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium">
-              <Sparkles className="h-4 w-4" />
-              <span>4 AI Agents Ready</span>
-            </div>
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-primary/5">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+        <div className="text-center max-w-4xl mx-auto">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8">
+            <Sparkles className="h-4 w-4 mr-2" />
+            4 Powerful AI Agents Ready
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Welcome Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Welcome to AI Agent Hub</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            Transform Your Business with
+            <span className="gradient-primary bg-clip-text text-transparent"> AI Agents</span>
+          </h1>
+          
+          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
             Select an AI agent below to get intelligent insights for your business challenges. 
             Each agent specializes in different aspects of AI implementation and optimization.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Bot className="h-5 w-5 mr-2" />
+              Get Started
+            </Button>
+            <Button size="lg" variant="outline">
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Agents Grid */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Choose Your AI Agent</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Each agent is specially designed to solve specific business challenges with AI precision
+          </p>
         </div>
 
-        {/* AI Agents Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {agents.map((agent) => {
             const IconComponent = agent.icon;
             return (
-              <Card key={agent.type} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm overflow-hidden">
+              <Card key={agent.type} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-card/80 backdrop-blur-sm hover:-translate-y-2">
                 <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center space-x-4">
-                      <div className={`p-3 rounded-xl bg-gradient-to-r ${agent.gradient} text-white shadow-sm group-hover:scale-110 transition-transform duration-300`}>
-                        <IconComponent className="h-6 w-6" />
-                      </div>
-                      <div>
-                        <CardTitle className="text-xl font-semibold text-gray-900 mb-2">{agent.title}</CardTitle>
-                        <CardDescription className="text-gray-600 leading-relaxed">{agent.shortDescription}</CardDescription>
-                      </div>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                      <IconComponent className={`h-6 w-6 ${agent.color} group-hover:text-primary-foreground`} />
+                    </div>
+                    <div className="flex-1">
+                      <CardTitle className="text-xl font-semibold text-foreground">{agent.title}</CardTitle>
+                      <CardDescription className="text-muted-foreground">{agent.shortDescription}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 
                 <CardContent className="pt-0">
-                  <p className="text-sm text-gray-700 mb-6 leading-relaxed">{agent.description}</p>
+                  <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{agent.description}</p>
                   
                   <Link to={agent.path}>
-                    <Button 
-                      className={`w-full bg-gradient-to-r ${agent.gradient} hover:opacity-90 text-white border-0 shadow-sm group-hover:shadow-md transition-all duration-300`}
-                    >
+                    <Button className="w-full bg-primary hover:bg-primary/90 group">
                       <div className="flex items-center justify-center space-x-2">
                         <Bot className="h-4 w-4" />
                         <span>Try This AI Agent</span>
@@ -116,43 +137,28 @@ const Index = () => {
             );
           })}
         </div>
+      </section>
 
-        {/* Features Section */}
-        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-gray-200">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Why Choose Our AI Agents?</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <Sparkles className="h-6 w-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Instant Analysis</h4>
-              <p className="text-gray-600 text-sm">Get immediate insights powered by advanced AI algorithms</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <TrendingUp className="h-6 w-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Data-Driven</h4>
-              <p className="text-gray-600 text-sm">Recommendations based on real-world data and best practices</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <Bot className="h-6 w-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Enterprise Ready</h4>
-              <p className="text-gray-600 text-sm">Built for business-critical decisions and scalable solutions</p>
-            </div>
+      {/* Features Section */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border shadow-xl">
+          <h3 className="text-3xl font-bold text-foreground mb-12 text-center">Why Choose Our AI Agents?</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                    <IconComponent className="h-8 w-8 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">{feature.title}</h4>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-500 text-sm flex items-center justify-center space-x-2">
-            <Bot className="h-4 w-4" />
-            <span>Powered by advanced AI agents • Enterprise-grade insights for your business strategy</span>
-          </p>
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
