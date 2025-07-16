@@ -13,10 +13,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:contact@aiagenhub.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/SimranShaikh20', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/simran-shaikh-39207a23b', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:shaikhsimran20.2003@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -54,16 +53,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
-            </ul>
-          </div>
+         
 
           {/* Social */}
           <div>

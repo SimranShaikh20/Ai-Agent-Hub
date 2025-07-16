@@ -114,9 +114,7 @@ const Index = () => {
                 <Bot className="h-6 w-6 mr-3" />
                 Get Started Now
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-slate-300 dark:border-slate-600 px-8 py-4 text-lg font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300">
-                Watch Demo
-              </Button>
+            
             </div>
           </div>
         </div>
