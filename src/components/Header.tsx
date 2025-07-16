@@ -36,7 +36,7 @@ const Header = () => {
               <Bot className="h-6 w-6 text-white" />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-foreground">AI Agent Hub</h1>
+              <h1 className="text-xl font-bold text-foreground">AI Agent Hubs</h1>
               <p className="text-xs text-muted-foreground">Smart Business Solutions</p>
             </div>
           </Link>
