@@ -29,7 +29,7 @@ const Footer = () => {
               <div className="p-2 gradient-primary rounded-xl">
                 <Bot className="h-5 w-5 text-white" />
               </div>
-              <span className="text-lg font-bold">AI Agent Hub</span>
+              <span className="text-lg font-bold">AI Agent Hubs</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering businesses with intelligent AI agents for automation, 
@@ -88,7 +88,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} AI Agent Hub. All rights reserved. Built for innovation.
+            © {currentYear} AI Agent Hubs. All rights reserved. Built for innovation.
           </p>
         </div>
       </div>
