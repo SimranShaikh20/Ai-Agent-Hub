@@ -88,7 +88,7 @@ AI Agent Hub is a cutting-edge React-based web application that empowers busines
 ### 1. 🔄 **Task Automation AI**
 <div align="center">
 
-![Task Automation Screenshot](./docs/images/task-automation-screenshot.png)
+![Task Automation Screenshot](images/Task.png)
 
 </div>
 
@@ -113,7 +113,7 @@ AI Agent Hub is a cutting-edge React-based web application that empowers busines
 ### 2. 🎯 **AI Model Selector**
 <div align="center">
 
-![LLM Selector Screenshot](./docs/images/llm-selector-screenshot.png)
+![LLM Selector Screenshot](images/Model.png)
 
 </div>
 
@@ -139,7 +139,7 @@ AI Agent Hub is a cutting-edge React-based web application that empowers busines
 ### 3. 💰 **AI Cost Estimator**
 <div align="center">
 
-![Cost Estimator Screenshot](./docs/images/cost-estimator-screenshot.png)
+![Cost Estimator Screenshot](images/Cost.png)
 
 </div>
 
@@ -164,7 +164,7 @@ AI Agent Hub is a cutting-edge React-based web application that empowers busines
 ### 4. 📊 **AI ROI Calculator**
 <div align="center">
 
-![ROI Calculator Screenshot](./docs/images/roi-calculator-screenshot.png)
+![ROI Calculator Screenshot](images/ROI.png)
 
 </div>
 
