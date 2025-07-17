@@ -19,23 +19,12 @@
 
 ---
 
-## 📋 Table of Contents
 
-- [🚀 Overview](#-overview)
-- [✨ Features](#-features)
-- [🤖 AI Agents](#-ai-agents)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🏗️ Architecture](#️-architecture)
-- [🚀 Getting Started](#-getting-started)
-- [📱 Screenshots](#-screenshots)
-- [🎯 Usage Guide](#-usage-guide)
-- [🚀 Deployment](#-deployment)
-- [🤝 Contributing](#-contributing)
-- [📊 Performance](#-performance)
-- [🔮 Roadmap](#-roadmap)
-- [📄 License](#-license)
-- [🆘 Support](#-support)
-- [🌟 Acknowledgments](#-acknowledgments)
+
+
+**🚀 Ready to transform your business with AI?**
+
+[🌐 **Try Live Demo**](https://your-demo-url.com) 
 
 ---
 
@@ -183,6 +172,39 @@ AI Agent Hub is a cutting-edge React-based web application that empowers busines
 - Productivity gains
 - Revenue enhancement
 - Risk mitigation value
+
+---
+
+## 🔗 Lyzr AI Studio Integration
+
+### 🏗️ **Backend AI Agent Architecture**
+
+This frontend application is powered by **Lyzr AI Studio** agents that handle all the intelligent processing and analysis. The connection architecture works as follows:
+
+#### 🤖 **AI Agent Backend**
+- **🏭 Lyzr AI Studio Agents** - Four specialized agents built using Lyzr's enterprise AI platform
+- **🔌 RESTful API Integration** - Seamless communication between Lovable frontend and Lyzr agents
+- **⚡ Real-time Processing** - Instant AI-powered analysis and recommendations
+- **🧠 Advanced LLM Models** - Leveraging state-of-the-art language models through Lyzr's infrastructure
+
+#### 🔄 **Connection Flow**
+```
+📱 Lovable Frontend → 🌐 API Gateway → 🤖 Lyzr AI Studio Agents → 📊 Analysis Results → 📱 Frontend Display
+```
+
+#### 🛠️ **Technical Integration**
+- **📡 API Endpoints** - Each AI agent exposes specific endpoints for different analysis types
+- **🔐 Authentication** - Secure API key-based authentication with Lyzr AI Studio
+- **📊 Data Processing** - Lyzr agents process user input and return structured analysis
+- **⚡ Response Handling** - Frontend efficiently handles and displays AI-generated insights
+
+#### 🎯 **Agent-Specific Connections**
+1. **🔄 Task Automation Agent** - Connected to Lyzr's workflow analysis AI
+2. **🎯 Model Selector Agent** - Integrated with Lyzr's recommendation engine
+3. **💰 Cost Estimator Agent** - Powered by Lyzr's financial calculation AI
+4. **📊 ROI Calculator Agent** - Connected to Lyzr's investment analysis AI
+
+This architecture ensures that the beautiful Lovable-built frontend seamlessly communicates with powerful Lyzr AI Studio agents to deliver intelligent, accurate, and actionable business insights.
 
 ---
 
@@ -567,12 +589,6 @@ We're grateful to the amazing open-source community and these fantastic projects
 - 🌍 **The Community** - Feedback, bug reports, and feature requests
 - 🎓 **Beta Testers** - Early adopters who helped shape the product
 
----
-
-
-**🚀 Ready to transform your business with AI?**
-
-[🌐 **Try Live Demo**](https://your-demo-url.com) 
 
 ---
 
