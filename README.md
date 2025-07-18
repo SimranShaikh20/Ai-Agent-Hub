@@ -229,6 +229,7 @@ This architecture ensures that the beautiful Lovable-built frontend seamlessly c
 ### **Project Structure**
 ```
 📁 ai-agent-hub/
+
 > Documentation
 > Images
 > jvz-Agents
@@ -248,7 +249,7 @@ This architecture ensures that the beautiful Lovable-built frontend seamlessly c
  tsconfig.json
  tsconfig.node.json
  vite.config.ts
-
+```
 </div>
 
 ---
