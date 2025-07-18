@@ -13,20 +13,12 @@
 
 [🌐 Live Demo](https://your-demo-url.com)
 
-![AI Agent Hub Hero](./docs/images/hero-screenshot.png)
+![AI Agent Hub Hero](images/Home2.png)
 
 </div>
 
 ---
 
-
-
-
-**🚀 Ready to transform your business with AI?**
-
-[🌐 **Try Live Demo**](https://your-demo-url.com) 
-
----
 
 ## 🚀 Overview
 
@@ -237,55 +229,25 @@ This architecture ensures that the beautiful Lovable-built frontend seamlessly c
 ### **Project Structure**
 ```
 📁 ai-agent-hub/
-├── 📁 public/                  # Static assets
-│   ├── 🖼️ favicon.ico
-│   ├── 🖼️ logo192.png
-│   └── 📄 manifest.json
-├── 📁 src/
-│   ├── 📁 components/          # Reusable UI components
-│   │   ├── 📁 ui/             # shadcn/ui components
-│   │   │   ├── 📄 button.tsx
-│   │   │   ├── 📄 card.tsx
-│   │   │   ├── 📄 input.tsx
-│   │   │   └── 📄 textarea.tsx
-│   │   ├── 📄 Header.tsx       # Navigation header
-│   │   ├── 📄 Footer.tsx       # Site footer
-│   │   ├── 📄 AgentCard.tsx    # Agent display cards
-│   │   ├── 📄 LoadingSpinner.tsx
-│   │   └── 📄 ThemeProvider.tsx
-│   ├── 📁 pages/              # Route components
-│   │   ├── 📄 Index.tsx        # 🏠 Home page
-│   │   ├── 📄 TaskAutomation.tsx # 🔄 Task automation
-│   │   ├── 📄 LLMSelector.tsx  # 🎯 Model selector
-│   │   ├── 📄 CostEstimator.tsx # 💰 Cost estimator
-│   │   ├── 📄 ROICalculator.tsx # 📊 ROI calculator
-│   │   └── 📄 NotFound.tsx     # 404 page
-│   ├── 📁 hooks/              # Custom React hooks
-│   │   ├── 📄 useAgentCall.ts  # AI agent interactions
-│   │   ├── 📄 useTheme.ts      # Theme management
-│   │   └── 📄 useLocalStorage.ts
-│   ├── 📁 services/           # API services
-│   │   ├── 📄 aiAgentService.ts
-│   │   ├── 📄 apiClient.ts
-│   │   └── 📄 constants.ts
-│   ├── 📁 lib/                # Utilities
-│   │   ├── 📄 utils.ts
-│   │   └── 📄 types.ts
-│   ├── 📁 styles/             # Global styles
-│   │   ├── 📄 globals.css
-│   │   └── 📄 components.css
-│   ├── 📄 App.tsx             # Main app component
-│   ├── 📄 main.tsx            # Entry point
-│   └── 📄 vite-env.d.ts       # Vite types
-├── 📁 docs/                   # Documentation
-│   ├── 📁 images/             # Screenshots
-│   └── 📄 API.md              # API documentation
-├── 📄 package.json            # Dependencies
-├── 📄 tsconfig.json           # TypeScript config
-├── 📄 tailwind.config.js      # Tailwind config
-├── 📄 vite.config.ts          # Vite config
-└── 📄 README.md               # This file
-```
+> Documentation
+> Images
+> jvz-Agents
+> public
+> src
+ .gitignore
+ bun.lockb
+ components.json
+ eslint.config.js
+ index.html
+ package-lock.json
+ package.json
+ postcss.config.js
+ README.md
+ tailwind.config.ts
+ tsconfig.app.json
+ tsconfig.json
+ tsconfig.node.json
+ vite.config.ts
 
 </div>
 
