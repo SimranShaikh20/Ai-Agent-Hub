@@ -226,30 +226,47 @@ This architecture ensures that the beautiful Lovable-built frontend seamlessly c
 
 <div align="center">
 
-### **Project Structure**
-```
-📁 ai-agent-hub/
+## 📁 Project Structure
 
-> Documentation
-> Images
-> jvz-Agents
-> public
-> src
- .gitignore
- bun.lockb
- components.json
- eslint.config.js
- index.html
- package-lock.json
- package.json
- postcss.config.js
- README.md
- tailwind.config.ts
- tsconfig.app.json
- tsconfig.json
- tsconfig.node.json
- vite.config.ts
-```
+```bash
+ai-agent-hub/
+├── Documentation/
+│   ├── AI_Agent_Report.docx
+│   └── images/
+│       ├── Cost.png
+│       ├── Home1.png
+│       ├── Home2.png
+│       ├── Model2.png
+│       ├── ROI.png
+│       └── Task.png
+├── lyzr-agents/
+│   ├── Knowledge base/
+│   │   ├── cost.docx
+│   │   ├── llmmodel.docx
+│   │   ├── roi.docx
+│   │   └── task.docx
+│   └── images/
+│       ├── Cost.png
+│       ├── Model.png
+│       ├── ROI.png
+│       └── Task.png
+├── public/
+├── src/
+├── .gitignore
+├── README.md
+├── bun.lockb
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
 </div>
 
 ---
