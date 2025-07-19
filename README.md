@@ -11,7 +11,7 @@
 
 **🚀 A comprehensive web application featuring intelligent AI agents designed to help businesses automate tasks, select optimal AI models, estimate costs, and calculate ROI for AI implementations.**
 
-[🌐 Live Demo](https://your-demo-url.com)
+[🌐 Live Demo](https://ai-agent-hub.netlify.app/)
 
 ![AI Agent Hub Hero](images/Home2.png)
 
